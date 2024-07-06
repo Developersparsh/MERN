@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table{
+        background-color: burlywood;
+      }
+      .buttons button {
+            padding: 10px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+         .buttons.save {
+            background-color:blue;
+            color: white;
+            border:none;
+        }
+        .buttons .cancel {
+            background-color: white;
+            color: black;
+            border: solid blue;
+        }
+        .buttons .resize {
+            background-color: #808080;
+            color:black;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <h2>
+            KM Custom HTML Form Example Using AppleScript
+        </h2>
+        <h5>
+            (by JMichaelTX)
+        </h5>
+        <table border="">
+            <tr>
+                <td>
+                    <label>
+                        Name:
+                    </label>
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Email:
+                    </label>
+                </td>
+                <td>
+                    <input type="email" name="email">
+                </td>               
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Password:
+                    </label>
+                </td>
+                <td>
+                    <input type="password" name="password">
+                </td>               
+            </tr>
+            <tr>
+                <td>
+                    <strong>
+                        Approval Required:
+                    </strong>
+                    <p>Click on the button or text to select.</p>
+                </td>
+                <td>
+                    <input type="checkbox" name="approval" value="true" id="1">
+                    <label>Do you approve</label>
+                    <input type="checkbox" name="approval" value="true" id="1">
+                    <label>Do you</label>
+                </td>               
+            </tr>
+            <tr>
+                <td>
+                    <strong>
+                        Pick your favourite:
+                    </strong>
+                    <p>Cick on the button or text to selsect.</p>
+                </td>
+                <td>
+                    <input type="radio" name="rd" value="Choice A">
+                    <label>Choice A</label>
+                    <input type="radio" name="rd" value="Choice B">
+                    <label>Choice B</label>
+                    <input type="radio" name="rd" value="Choice C">
+                    <label>Choice C</label>
+                </td>               
+            </tr>
+            <tr>
+              <td rowspan="2"> <label for="popup">List:</label>
+                <p>Setup Options:</p>
+                <p>. Number of rows to display</p>
+                <p>. Allow Multi-select</p>
+              </tr>
+              <td>
+                <select id="list" name="list" multiple size="5">
+                  <option value="CA">California -- CA</option>
+                  <option value="CO">Colorado -- CO</option>
+                  <option value="CN">Connecticut -- CN</option>
+                  <option value="DA">Dalifornia -- DA</option>
+                  <option value="DO">Dolorado -- DO</option>
+              </select>
+              </td>
+              <tr>
+                <td><label for="ignored">Field Ignored by KM:</label></td>
+                <td> <input type="text" id="ignored" name="ignored" value="10,384"></td>
+            
+                </tr>
+                <tr>
+                  <td><label for="textarea">Text Area:</label></td>
+                  <td><textarea id="textarea" name="textarea" rows="4">Now is the time for all good men to come to the aid of their country</textarea></td>
+                </tr>
+            </table>
+            <div class="buttons">
+              <input type="submit" name="sub" value="submit" class="save"></input>
+              <button type="button" class="cancel">Cancel</button>
+              <button type="button" class="resize">Resize</button>
+          </div>
+            </form>
+            </table>
+            </body>
+            </html>

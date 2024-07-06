@@ -1,0 +1,24 @@
+.area{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 20px;
+}
+#box-translation{
+  transform: translate(100px,100px);
+}
+#box-rotation{
+  transform: rotate(45deg);
+}
+#box-scale{
+  transform: scale(0.5,0.5);
+}
+#box-skew{
+  transform: skew(10deg,10deg);
+}
+#box-multi{
+  transform: translate(0px,100px)
+  rotate(60deg)
+  scale(0.75,0.5)
+  skew(20deg,20deg);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .upload-section {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .upload-section p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .upload-files {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .upload-files li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px 0;
+            background: #f9f9f9;
+        }
+        .upload-files li .progress {
+            width: 100px;
+            height: 10px;
+            border-radius: 5px;
+            background: #e0e0e0;
+            overflow: hidden;
+        }
+        .upload-files li .progress div {
+            width: 70%; /* Adjust this value based on the upload progress */
+            height: 100%;
+            background: #4caf50;
+        }
+        .upload-files li button {
+            background: none;
+            border: none;
+            color: #f44336;
+            cursor: pointer;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #4caf50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Send files to this email:</h2>
+        <input type="email" placeholder="example@gmail.com">
+        <div class="upload-section">
+            <p>Drop files here</p>
+            <p>Or</p>
+            <button type="button">Browse</button>
+        </div>
+        <ul class="upload-files">
+            <li>
+                banner-design.png
+                <button type="button">&times;</button>
+            </li>
+            <li>
+                template-file.zip
+                <div class="progress">
+                    <div></div>
+                </div>
+                <button type="button">&times;</button>
+            </li>
+        </ul>
+        <button type="button">Send File</button>
+    </div>
+</body>
+</html>

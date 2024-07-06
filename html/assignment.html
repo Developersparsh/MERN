@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Html Boxes</title>
+     <style>
+
+          body, html{
+               display: grid;
+               height: 100vh;
+          }
+          .container {
+               
+               display: grid;
+               grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+               grid-template-rows: repeat(2, minmax(250px, 1fr));
+               gap: 1rem;
+               width: 100%;
+          }
+          
+          .box {
+               margin: auto;
+               padding: 0 2rem;
+               height: 20rem;
+               width: 14rem;
+               border: 2px solid red;
+          }
+
+          .address{
+               border: 1px solid green;
+               margin: 1rem auto;
+               padding: 1rem;
+
+          }
+     </style>
+</head>
+
+<body>
+     <section class="container">
+          <div class="box">
+               <h2>Name:  </h2>
+               <span>Employee Id:  </span>
+               <div class="address">
+                    <h3>Address:</h3>
+                    <span>City: </span><br>
+                    <span>District: </span><br>
+                    <span>Pin: </span>
+               </div>
+               <span>Hobbies: </span>
+          </div>
+          <div class="box">
+               <h2>Name:  </h2>
+               <span>Employee Id:  </span>
+               <div class="address">
+                    <h3>Address</h3>
+                    <span>City: </span><br>
+                    <span>District: </span><br>
+                    <span>Pin: </span>
+               </div>
+               <span>Hobbies:   </span>
+          </div>
+          <div class="box">
+               <h2>Name:  </h2>
+               <span>Employee Id:  </span>
+               <div class="address">
+                    <h3>Address</h3>
+                    <span>City: </span><br>
+                    <span>District: </span><br>
+                    <span>Pin: </span>
+               </div>
+               <span>Hobbies:   </span>
+          </div>
+          <div class="box">
+               <h2>Name:  </h2>
+               <span>Employee Id:  </span>
+               <div class="address">
+                    <h3>Address</h3>
+                    <span>City: </span><br>
+                    <span>District: </span><br>
+                    <span>Pin: </span>
+               </div>
+               <span>Hobbies:   </span>
+          </div>
+         
+
+     </section>
+</body>
+
+</html>

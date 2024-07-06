@@ -1,0 +1,29 @@
+
+a[href="abc.com"]{
+  color: blue;
+  background-color: rgb(109,109,27);
+}
+a[href="xyz.id"]{
+  color: green;
+  background-color: gray;
+}
+b,i,u{
+  color: lightpink;
+  background-color: darkmagenta;
+}
+header h3,header p{
+  color:maroon;
+  background-color: yellowgreen;
+}
+article>p{
+  background-color: brown;
+  color: aquamarine;
+}
+article>main>p{
+  background-color: aqua;
+  color: rosybrown;
+}
+h6+small+small+small{
+  color: gold;
+  background-color: indigo;
+}
